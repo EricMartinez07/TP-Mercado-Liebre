@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+header{
+    background-color: #EAC926;
+   
+}
+.buscador p, .buscador a{
+    background-color: #ebebeb;
+    border: #666 1px solid;
+    border-radius: 2px;
+    display: inline;
+    margin-left: 5%;
+    line-height: 21px;
+}
+
+header nav ul a{
+    color: black;
+}
+img {
+    width: 100%;
+}
+header .burger-menu{
+    display: flex;
+    justify-content: center;
+    }
+header .burger-menu a{
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+h3{
+    font-size: 24px;
+    color: #666;
+}
+p.precio{
+    font-size: 18px;
+}
+p.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    
+}
+p.descripcion{
+    font-size: 16px;
+}
+main{
+    background-color: #ebebeb;
+}
+footer{
+    color: #666;
+}
+section.seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer section i {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #1259c3;
+}
+
+h4{
+    font-size: 24px;
+}
+
