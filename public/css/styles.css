@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
 *{
     box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     padding: 0;
 }
 a {
@@ -22,6 +21,7 @@ body{
 }
 header{
     background-color: var(--Amarillo);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 .buscador p{
     background-color: var(--GrisClaro);
@@ -31,6 +31,7 @@ header{
     margin-left: 5%;
     line-height: 21px;
    
+   
 }
 .buscador a{
     background-color: var(--GrisClaro);
@@ -39,10 +40,12 @@ header{
     display: inline;
     margin-left: 5%;
     line-height: 21px;
+    
 }
 
 .site{
     color: black;
+    display: none;
 }
 img {
     width: 100%;
@@ -73,14 +76,15 @@ h3{
 }
 .descripcion{
     font-size: 16px;
+    display: none;
 }
 main{
     background-color: var(--GrisClaro);
-    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 footer{
     color: var(--GrisOscuro);
-    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .seccion{
     display: flex;
@@ -98,16 +102,18 @@ h4{
     font-size: 24px;
 }
 .seccion_main{
-    
+
 width: 90%;
    }
 .bloque_seccion{
     padding: 15px;
     border: solid 1px var(--GrisClaro);
     background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 .article_main{
     margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 @media (min-width: 361px){
     header{
@@ -123,15 +129,18 @@ width: 90%;
         display: inline;
         margin-left: 5%;
         line-height: 21px;
-        display: none;
+       
     }
     .site{
-        display: none;
+        display: block;
     }
    p.descripcion{
         font-size: 16px;
-        display: none;
+        display: block;
     }
+    .burger-menu a{
+        display:none;
+        }
 }
 @media (min-width: 769px){
     
