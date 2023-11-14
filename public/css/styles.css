@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+body{
+    font-family: 'Roboto';
+    font-size: 12px;
+   max-width: 1200px;
+}
+header{
+    background-color: var(--Amarillo);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 20px;
+    }
+.logo-mercado-liebre{
+    width: 50%;
+}
+.img-home-banner{
+    width: 100%;
+}
+.conjunto_header{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+.buscador p{
+    background-color: var(--GrisClaro);
+    border: var(--GrisOscuro) 1px solid;
+    border-radius: 2px;
+    display: inline;
+    margin-left: 5%;
+    line-height: 21px;
+    width: 50%
+   }
+.buscador a{
+    background-color: var(--GrisClaro);
+    border: var(--GrisOscuro) 1px solid;
+    border-radius: 2px;
+    display: inline;
+    line-height: 21px;
+    
+}
+.tarjetas{
+    text-align: center;
+    padding-bottom: 5px;
+}
+.site {
+    display: none;
+}
+.site a{
+    color: black;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+img {
+    width: 100%;
+}
+.burger-menu{
+    background-color: var(--Celeste);
+    color: white;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+h3{
+    font-size: 24px;
+    color: var(--GrisOscuro);
+}
+.precio{
+    font-size: 18px;
+    display: flex;
+    flex-grow: 0.30;
+}
+.descuento{
+    font-size: 16px;
+    color: var(--Verde);
+    display: flex;
+    flex-grow: 0.70;
+
+}
+.descripcion{
+    font-size: 16px;
+    display: none;
+}
+main{
+    background-color: var(--GrisClaro);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+footer{
+    color: var(--GrisOscuro);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer section i {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--Celeste);
+}
+
+h4{
+    font-size: 24px;
+}
+.seccion_main{
+width: 90%;
+   }
+.bloque_seccion{
+    position: relative;
+    padding: 15px;
+    border: solid 1px var(--GrisClaro);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.conjunto{
+    display: flex;
+    flex-wrap: wrap;
+  flex-direction: row;  
+}
+.article_main_1{
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.article_main_2{
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: none;
+}
+.article_main_3{
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: none;
+}
+.article_main_4{
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: none;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+@media (min-width: 361px){
+    .conjunto_header_tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article_main_2{
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: block;
+    }
+
+    .tarjetas{
+        max-width: 350px;
+        text-align: right;
+    }
+    .buscador p, .buscador a{
+        background-color: var(--GrisClaro);
+        border: var(--GrisOscuro) 1px solid;
+        border-radius: 2px;
+        display: inline;
+        margin-left: 5%;
+        line-height: 21px;
+       
+    }
+    .site{
+       display: flex;
+       justify-content: space-between;
+    }
+    .site ul{
+        display: flex;
+    }
+    .site li{
+        margin: 0px 5px;
+    }
+  p.descripcion{
+        font-size: 16px;
+        display: block;
+    }
+    .burger-menu{
+        display:none;
+        }
+   .articulos{
+    display: flex;
+   }
+}
+@media (min-width: 769px){
+    .site li{
+        margin-top: 5px;
+    }
+    .burger-menu{
+    display:none;
+    }
+    .articulos{
+        display: flex;
+        flex-direction: row;
+       }
+    .article_main_3{
+        display: block;
+    }
+    .article_main_4{
+        display: block;
+    }
+}
