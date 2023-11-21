@@ -1,0 +1,39 @@
+footer section div{
+    color: var(--GrisOscuro);
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+}
+
+footer section div i {
+    font-size: 2rem;
+    color: var(--Celeste);
+    transition: all 300ms;
+    
+}
+footer section div i:hover {
+    color: #0022AA;
+    transform: translateY(-7px);
+}
+
+footer section div p {
+    font-size: small;
+    text-align: center;
+
+}
+
+footer .Copyright {
+    display: block;
+    margin: 20px;
+}
+@media (min-width: 768px) {
+    footer section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    footer .Copyright{
+        text-align: center;
+    }
+}

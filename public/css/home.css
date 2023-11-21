@@ -1,0 +1,112 @@
+main {
+    background-color: var(--GrisClaro);
+}
+
+main img {
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    gap: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+main h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+main section article {
+    background-color: white;
+    width: 70%;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px #646464;
+}
+
+main section article .Descripcion {
+    padding: 10px;
+    border-top: 1px solid var(--GrisClaro);
+    position: relative;
+    height: 60px;
+}
+
+
+main section article .Descripcion i {
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: var(--Verde);
+    background-color: #FFF;
+    transition: all 1s;
+}
+
+main section article .Descripcion i:hover {
+    transform: rotate(-360deg);
+}
+
+main section article .Descripcion .precio {
+    font-size: 18px;
+    margin-left: 15px;
+    display: inline;
+    color: var(--GrisOscuro);
+}
+
+main section article .Descripcion .descuento {
+    font-size: 15px;
+    color: var(--Verde);
+    display: inline;
+    margin: 5px;
+}
+
+main section article .Descripcion .producto {
+    font-size: 18px;
+    color: var(--GrisOscuro);
+    margin: 0 15px;
+    height: 0;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+
+    main section {
+        justify-content: space-between;
+        padding: 0 70px;
+        align-items: flex-start; 
+    }
+    
+
+
+    main section article{
+        width: 45%;
+
+    }
+    
+
+    main h2 {
+        text-align: start;
+    }
+
+    main section article:hover .Descripcion .producto {
+        height: 20px;
+    }
+}
+
+@media (min-width: 1140px) {
+    main section article {
+        width: 23%;
+    }
+}
